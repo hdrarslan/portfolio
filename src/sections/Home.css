@@ -1,0 +1,13 @@
+.home {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.home-cover {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}

@@ -1,0 +1,72 @@
+/**
+ * Footer: colored block (controller accent). Uses a fixed accent (blue) so it stays consistent.
+ */
+.contact {
+  position: relative;
+  z-index: 1;
+  padding: 3rem 1.5rem;
+  background: var(--color-blue);
+  color: #fff;
+}
+
+.contact-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: #fff;
+}
+
+.contact-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 0.25rem;
+  opacity: 0.9;
+}
+
+.contact-email {
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  transition: opacity var(--transition);
+}
+
+.contact-email:hover {
+  opacity: 0.9;
+}
+
+.contact-social {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-social-link {
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: box-shadow var(--transition);
+}
+
+.contact-social-link:hover,
+.contact-social-link:focus-visible {
+  box-shadow: 0 0 0 2px rgba(255,255,255,0.8);
+}
+
+.contact-copy {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin: 0;
+}

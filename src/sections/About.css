@@ -1,0 +1,103 @@
+.about {
+  position: fixed;
+  inset: 0;
+  z-index: 150;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.about-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.about-panel {
+  position: relative;
+  max-width: 560px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  padding: 2rem;
+  border: 3px solid var(--color-black);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.about-panel--green {
+  background: var(--color-green);
+}
+
+.about-grain {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 9px;
+  opacity: 0.35;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+}
+
+.about-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--color-black);
+  background: var(--color-white);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  border-radius: 8px;
+  z-index: 2;
+  transition: transform var(--transition);
+}
+
+.about-close:hover {
+  transform: scale(1.05);
+}
+
+.about-body {
+  position: relative;
+  z-index: 1;
+}
+
+.about-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 1rem;
+}
+
+.about-tv-frame {
+  aspect-ratio: 4 / 3;
+  background: #1a1a1a;
+  border-radius: 8px;
+  margin: 1rem 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-static-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-static-placeholder {
+  padding: 1rem;
+  text-align: center;
+  color: rgba(255,255,255,0.7);
+  font-size: 0.9rem;
+}
+
+.about-text {
+  margin: 0;
+  line-height: 1.6;
+}

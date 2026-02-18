@@ -1,0 +1,11 @@
+/**
+ * Call Four — pixel font. font-family exactly "CallFour".
+ * Used site-wide for headings, titles, buttons, filter labels (see theme.css).
+ */
+@font-face {
+  font-family: "CallFour";
+  src: url("../assets/fonts/CallFour/Call Four L Regular 3.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

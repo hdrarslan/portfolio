@@ -1,0 +1,95 @@
+/**
+ * Controller colors + Work section category theming.
+ * Global typography: headings / titles / buttons = CallFour; body / paragraphs = modern font.
+ * Page background pure white. Texture only in header (grain.css). No dreamhouse.png anywhere.
+ */
+:root {
+  --font-heading: "CallFour", cursive;
+  --font-body: 'Space Grotesk', system-ui, sans-serif;
+
+  --color-logo: #d45b5b;
+  --color-product: #5b9bd5;
+  --color-social: #e6c84a;
+  --color-animated: #7cb87c;
+  --color-red: #d45b5b;
+  --color-blue: #5b9bd5;
+  --color-green: #7cb87c;
+  --color-yellow: #e6c84a;
+  --color-black: #1a1a1a;
+  --color-white: #ffffff;
+  --transition: 0.2s ease;
+}
+
+/* Global typography: headings and UI use CallFour */
+h1, h2, h3, h4, h5, h6,
+.work-title,
+.home-title,
+.work-filter-btn,
+.contact-title,
+.header-nav-link,
+.project-modal-title,
+.project-card-title,
+button {
+  font-family: var(--font-heading);
+}
+
+/* Body and paragraphs use modern font */
+body, p, .home-intro, .contact-label, .contact-email, .contact-copy,
+.project-modal-desc, .project-modal-meta {
+  font-family: var(--font-body);
+}
+
+.work {
+  --work-bg: #ffffff;
+  --work-text: var(--color-black);
+  --work-border: #e5e5e5;
+  --work-btn-bg: #f0f0f0;
+  --work-btn-text: var(--color-black);
+  --work-btn-active-bg: var(--color-black);
+  --work-btn-active-text: #ffffff;
+  --work-card-border: transparent;
+}
+
+.work[data-category="Logo Design"] {
+  --work-bg: #fef2f2;
+  --work-text: var(--color-black);
+  --work-border: rgba(212, 91, 91, 0.35);
+  --work-btn-bg: rgba(212, 91, 91, 0.12);
+  --work-btn-text: var(--color-black);
+  --work-btn-active-bg: var(--color-logo);
+  --work-btn-active-text: #ffffff;
+  --work-card-border: rgba(212, 91, 91, 0.4);
+}
+
+.work[data-category="Product Design"] {
+  --work-bg: #f0f6fc;
+  --work-text: var(--color-black);
+  --work-border: rgba(91, 155, 213, 0.35);
+  --work-btn-bg: rgba(91, 155, 213, 0.12);
+  --work-btn-text: var(--color-black);
+  --work-btn-active-bg: var(--color-product);
+  --work-btn-active-text: #ffffff;
+  --work-card-border: rgba(91, 155, 213, 0.4);
+}
+
+.work[data-category="Social Media"] {
+  --work-bg: #fefce8;
+  --work-text: var(--color-black);
+  --work-border: rgba(230, 200, 74, 0.4);
+  --work-btn-bg: rgba(230, 200, 74, 0.2);
+  --work-btn-text: var(--color-black);
+  --work-btn-active-bg: var(--color-social);
+  --work-btn-active-text: var(--color-black);
+  --work-card-border: rgba(230, 200, 74, 0.5);
+}
+
+.work[data-category="Animated Visuals"] {
+  --work-bg: #f0f8f0;
+  --work-text: var(--color-black);
+  --work-border: rgba(124, 184, 124, 0.35);
+  --work-btn-bg: rgba(124, 184, 124, 0.2);
+  --work-btn-text: var(--color-black);
+  --work-btn-active-bg: var(--color-animated);
+  --work-btn-active-text: #ffffff;
+  --work-card-border: rgba(124, 184, 124, 0.4);
+}

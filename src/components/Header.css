@@ -1,0 +1,44 @@
+/**
+ * Top bar only: brand + nav. Yellow with subtle grain (grain.css). No dreamhouse.png. No About Me here.
+ */
+.header {
+  position: relative;
+  z-index: 10;
+  padding: 0.75rem 1.5rem;
+  background-color: #C9A318;
+}
+
+.header-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.header-nav-link {
+  color: var(--color-black);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: box-shadow var(--transition);
+}
+
+.header-nav-link--blue:hover,
+.header-nav-link--blue:focus-visible { box-shadow: 0 0 0 2px var(--color-blue); }
+.header-nav-link--green:hover,
+.header-nav-link--green:focus-visible { box-shadow: 0 0 0 2px var(--color-green); }
+.header-nav-link--red:hover,
+.header-nav-link--red:focus-visible { box-shadow: 0 0 0 2px var(--color-red); }
